@@ -1,0 +1,3 @@
+"""
+CampusAI – Pydantic Schemas Package
+"""

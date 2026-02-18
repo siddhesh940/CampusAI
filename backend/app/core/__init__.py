@@ -1,0 +1,3 @@
+"""
+CampusAI – Core Package
+"""

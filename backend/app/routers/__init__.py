@@ -1,0 +1,3 @@
+"""
+CampusAI – API Routers Package
+"""

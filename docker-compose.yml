@@ -1,0 +1,70 @@
+version: "3.8"
+
+services:
+  # ─── Backend (FastAPI) ───
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: campusai-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env
+    volumes:
+      - ./backend:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - campusai-network
+
+  # ─── PostgreSQL (Local Dev) ───
+  db:
+    image: postgres:16-alpine
+    container_name: campusai-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: campusai
+      POSTGRES_PASSWORD: campusai_dev_pass
+      POSTGRES_DB: campusai
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U campusai"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - campusai-network
+
+  # ─── Frontend (Next.js – Dev) ───
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: dev
+    container_name: campusai-frontend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./.env
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - campusai-network
+
+volumes:
+  postgres_data:
+
+networks:
+  campusai-network:
+    driver: bridge

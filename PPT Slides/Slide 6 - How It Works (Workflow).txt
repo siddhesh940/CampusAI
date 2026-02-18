@@ -1,0 +1,129 @@
+SLIDE 6 — HOW IT WORKS (WORKFLOW)
+===================================
+
+Content for this slide (6 steps — use below text inside the flowchart):
+
+  STEP 1: Sign Up & Login
+  STEP 2: Smart Dashboard
+  STEP 3: AI Chat Assistant  
+  STEP 4: Portal Actions
+  STEP 5: Track & Reminders
+  STEP 6: Onboarding Done! 🎓
+
+
+========================================================
+GEMINI AI PROMPT — Horizontal Workflow Flowchart
+========================================================
+
+Copy-paste this FULL prompt into Gemini AI image generator:
+
+---
+
+Create a ultra-premium, visually stunning HORIZONTAL WORKFLOW FLOWCHART 
+for a project called "CampusAI — Smart Student Onboarding Agent".
+
+This is a step-by-step user journey showing how the platform works, 
+flowing from LEFT to RIGHT in a single horizontal pipeline.
+
+STYLE & AESTHETICS:
+- Background: Deep dark space theme — dark navy blue (#0a0a2e) to 
+  deep black-purple (#0d0921) gradient with scattered subtle stars, 
+  tiny nebula clouds, and soft cosmic dust particles
+- Cards: Frosted glassmorphism rounded rectangle cards with soft 
+  inner glow and glowing neon borders
+- Each step card has a DIFFERENT accent glow color:
+  Step 1 = Electric Blue (#3b82f6)
+  Step 2 = Vivid Purple (#8b5cf6)  
+  Step 3 = Neon Cyan (#06b6d4)
+  Step 4 = Emerald Green (#10b981)
+  Step 5 = Warm Amber (#f59e0b)
+  Step 6 = Golden Yellow (#eab308) with special celebration glow
+- Arrows: Thick glowing gradient arrows between each card, flowing 
+  left → right, with a subtle pulsing/animated look. Arrow color 
+  should transition from blue on the left to gold on the right.
+- Icons: Large 3D-style colorful emoji icons at the TOP of each card
+- Step Numbers: Bold circular badge with step number (1, 2, 3...) 
+  at the top-left corner of each card with matching accent color
+- Typography: Clean bold white text for titles, light gray (#cbd5e1) 
+  for description text, with subtle text-shadow glow
+- Overall feel: Like a premium SaaS onboarding flow from a $10M 
+  startup pitch deck — clean, modern, cinematic
+- Aspect ratio: 16:9 widescreen, ultra high resolution 4K
+
+LAYOUT:
+
+TITLE at top center: 
+"How It Works" in large bold white text with subtle glow
+Small subtitle below: "Student Onboarding Workflow — 6 Simple Steps"
+Top-right corner: "INNOVGENIUS" in bold white text
+
+MAIN FLOWCHART — 6 cards in a single horizontal row, connected by 
+glowing gradient arrows (➜) flowing left to right:
+
+CARD 1 — 📱 SIGN UP & LOGIN
+  "Student registers with name,"
+  "email, course & year."  
+  "Secure SHA-256 authentication."
+  Border glow: Electric Blue
+
+      ━━━➜
+
+CARD 2 — 📊 SMART DASHBOARD
+  "Personalized dashboard with"
+  "progress bar, pending tasks"
+  "& quick-action portal cards."
+  Border glow: Vivid Purple
+
+      ━━━➜
+
+CARD 3 — 💬 AI CHAT ASSISTANT
+  "Ask any question in natural"
+  "language. AI detects intent &"
+  "gives instant smart answers."
+  Border glow: Neon Cyan
+
+      ━━━➜
+
+CARD 4 — 🌐 PORTAL ACTIONS
+  "Pay fees, upload documents,"
+  "activate LMS, apply for"
+  "hostel — all in one place."
+  Border glow: Emerald Green
+
+      ━━━➜
+
+CARD 5 — ⏰ TRACK & REMINDERS
+  "Auto progress tracking across"
+  "all stages. Smart deadline"
+  "reminders & real-time updates."
+  Border glow: Warm Amber
+
+      ━━━➜
+
+CARD 6 — 🎓 ONBOARDING COMPLETE!
+  "All tasks done! Student is"
+  "fully campus-ready. Admin"
+  "monitors via analytics panel."
+  Border glow: Golden Yellow (extra bright celebration glow, 
+  add subtle sparkle/confetti particles around this card)
+
+ADDITIONAL DESIGN DETAILS:
+- Add a thin subtle horizontal line/track behind all 6 cards like a 
+  progress rail/pipeline, glowing softly in gradient from blue to gold
+- Each arrow between cards should be thick, glowing, and have a 
+  slight gradient that transitions color matching the adjacent cards
+- Cards should have equal width and height, perfectly aligned
+- Add very subtle reflection/shadow below each card
+- The background should have a few larger soft-glowing orbs/circles 
+  in purple and blue for depth (like bokeh lights)
+- Add a tiny checkmark ✓ badge on the bottom of each card
+- Make card corners nicely rounded (16px radius feel)
+- Text inside cards should be 3 short lines max, center-aligned
+- The overall flow should feel like a journey/pipeline progressing 
+  from start (blue/cold) to finish (gold/warm) — a color temperature 
+  journey from cool to warm
+- NO watermarks, NO stock photos, pure vector/infographic design
+- Make it CLEAN, MINIMAL, PREMIUM — not cluttered
+
+---
+

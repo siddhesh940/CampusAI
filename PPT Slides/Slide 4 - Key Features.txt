@@ -1,0 +1,40 @@
+SLIDE 4 — KEY FEATURES
+=======================
+
+Title: Key Features
+Branding: INNOVGENIUS (top-right)
+
+Content (add as bullet points below the title):
+
+• AI Chat Assistant — Answers student queries instantly using 
+  rule-based NLP with intent detection and a JSON knowledge base.
+  Covers fees, documents, LMS, hostel, orientation, mentor, 
+  timetable, and contacts.
+
+• Fee Payment Portal — Detailed fee breakdown, multiple payment 
+  methods (UPI, Net Banking, Card, DD), installment plan, 
+  scholarship info, and one-click payment with receipt generation.
+
+• Document Verification Portal — Upload 8+ required documents 
+  with per-file guidelines, submission checklist, and real-time 
+  verification status tracking.
+
+• LMS Activation Portal — Step-by-step activation wizard, 
+  auto-enrollment in 5 semester courses, course cards with 
+  professor and schedule, mobile app support.
+
+• Hostel Application Portal — Room type comparison (Single/Double/
+  Triple) with pricing, food preference, facility grid, and 
+  hostel rules.
+
+• Student Dashboard — KPI metric cards, 4-stage onboarding 
+  progress bar, pending task checklist, and auto-generated 
+  deadline reminders.
+
+• Admin Analytics Panel — Plotly charts for fee collection and 
+  stage distribution, student management table, and escalation 
+  queue for unresolved issues.
+
+• Secure Authentication — SHA-256 password hashing with salt, 
+  role-based access (Student/Admin), admin code verification, 
+  and session-based login/logout.

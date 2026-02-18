@@ -1,0 +1,22 @@
+SLIDE 2 — PROBLEM STATEMENT
+============================
+
+Title: Problem Statement
+Branding: INNOVGENIUS (top-right)
+
+Content (add as paragraph text below the title):
+
+Universities onboard thousands of students every year, yet the process 
+remains fragmented, manual, and overwhelming. Students are forced to 
+visit multiple offices, track scattered deadlines, and navigate unclear 
+requirements for fee payment, document submission, LMS activation, and 
+hostel allocation — all without a single unified platform.
+
+This leads to missed deadlines, rejected documents, delayed enrollments, 
+and an overall frustrating first impression of campus life. On the admin 
+side, there is zero real-time visibility into student progress, resulting 
+in repeated queries, overloaded helpdesks, and inefficient resource allocation.
+
+CampusAI addresses this gap by providing an intelligent, AI-powered 
+onboarding agent that guides every student from admission to classroom 
+— step by step, in one place.

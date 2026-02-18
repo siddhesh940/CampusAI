@@ -1,0 +1,156 @@
+{
+  "contacts": {
+    "academic_office": {
+      "email": "academic@campus.edu",
+      "location": "Block B, First Floor",
+      "phone": "Ext: 1300"
+    },
+    "accounts_department": {
+      "email": "accounts@campus.edu",
+      "location": "Block A, First Floor",
+      "phone": "Ext: 1100"
+    },
+    "admissions_office": {
+      "email": "admissions@campus.edu",
+      "location": "Block A, Ground Floor",
+      "phone": "Ext: 1200"
+    },
+    "hostel_office": {
+      "email": "hostel@campus.edu",
+      "location": "Hostel Block, Ground Floor",
+      "phone": "Ext: 3300"
+    },
+    "it_support": {
+      "email": "it@campus.edu",
+      "location": "Block C, Room 101",
+      "phone": "Ext: 2200"
+    },
+    "library": {
+      "email": "library@campus.edu",
+      "location": "Central Library Building",
+      "phone": "Ext: 5500"
+    },
+    "placement_cell": {
+      "email": "placements@campus.edu",
+      "location": "Block D, Ground Floor",
+      "phone": "Ext: 4400"
+    },
+    "student_welfare": {
+      "email": "welfare@campus.edu",
+      "location": "Block A, Second Floor",
+      "phone": "Ext: 1400"
+    }
+  },
+  "documents": {
+    "contact": "admissions@campus.edu | Ext: 1200",
+    "internal_portal": "portal_documents",
+    "processing_time": "3-5 working days after submission",
+    "required_documents": [
+      "10th Marksheet (Original + 2 copies)",
+      "12th Marksheet (Original + 2 copies)",
+      "Transfer Certificate from previous institution",
+      "Migration Certificate",
+      "Aadhar Card / Government ID",
+      "Passport-size photographs (6 copies)",
+      "Admission Offer Letter (signed)",
+      "Medical Fitness Certificate",
+      "Caste Certificate (if applicable)",
+      "Income Certificate (for scholarship)"
+    ],
+    "submission_method": "Submit at the Admissions Office (Block A, Ground Floor) or upload on the student portal",
+    "verification_status_check": "Check status on the student portal under Documents section"
+  },
+  "fees": {
+    "contact": "accounts@campus.edu | Ext: 1100",
+    "deadline": "Within 30 days of admission confirmation",
+    "hostel_fee": "80,000 INR per year",
+    "installment_plan": "Available in 2 installments: 60% at admission, 40% before mid-semester",
+    "late_fee": "500 INR per day after deadline",
+    "payment_methods": [
+      "Online Banking (NEFT/RTGS)",
+      "Credit/Debit Card",
+      "UPI",
+      "Demand Draft",
+      "Education Loan"
+    ],
+    "internal_portal": "portal_fees",
+    "refund_policy": "Full refund within 15 days of admission, 50% within 30 days, no refund after 30 days",
+    "scholarship_info": "Merit scholarships available for top 10% — up to 50% tuition waiver. Apply through the scholarship portal.",
+    "tuition_fee": "1,50,000 INR per year"
+  },
+  "hostel": {
+    "allotment": "Room allotment is on first-come-first-served basis",
+    "application_process": "Apply through hostel portal within 7 days of admission confirmation",
+    "contact": "hostel@campus.edu | Ext: 3300",
+    "facilities": [
+      "Wi-Fi",
+      "Laundry",
+      "Mess (3 meals)",
+      "24/7 Security",
+      "Common Room",
+      "Gym",
+      "Study Hall",
+      "Hot Water"
+    ],
+    "internal_portal": "portal_hostel",
+    "room_types": {
+      "double": "8,000 INR per month",
+      "single": "12,000 INR per month",
+      "triple": "5,000 INR per month"
+    },
+    "rules": "No guests after 10 PM. Mess timings: Breakfast 7-9 AM, Lunch 12-2 PM, Dinner 7-9 PM"
+  },
+  "lms": {
+    "activation_steps": [
+      "Go to the LMS Portal (click the button below)",
+      "Enter your Student ID and registered email",
+      "Set your password (min 8 characters, 1 uppercase, 1 number)",
+      "Complete your profile setup",
+      "Enroll in your semester courses"
+    ],
+    "contact": "it@campus.edu | Ext: 2200",
+    "features": [
+      "Course Materials",
+      "Assignments",
+      "Online Quizzes",
+      "Video Lectures",
+      "Discussion Forum",
+      "Grade Tracker"
+    ],
+    "mobile_app": "Available on iOS and Android",
+    "platform": "Campus Learning Management System",
+    "support_hours": "Mon-Fri, 9 AM - 6 PM",
+    "internal_portal": "portal_lms"
+  },
+  "mentor": {
+    "about": "Every student is assigned a faculty mentor who provides academic and personal guidance throughout the program. Mentors are assigned within the first 2 weeks of the semester.",
+    "contact": "mentoring@campus.edu | Ext: 1600",
+    "meeting_frequency": "Minimum once a month",
+    "responsibilities": "Academic guidance, career counselling, personal support, attendance monitoring"
+  },
+  "orientation": {
+    "contact": "orientation@campus.edu | Ext: 1500",
+    "dress_code": "Smart casual",
+    "program": [
+      "Day 1: Welcome and Campus Tour",
+      "Day 2: Academic Overview and Faculty Introduction",
+      "Day 3: Club and Committee Fair",
+      "Day 4: Library and Lab Orientation",
+      "Day 5: Mentoring Session and Q&A"
+    ],
+    "schedule": "First week of the semester (5-day program)",
+    "venue": "Main Auditorium, Campus Block A",
+    "what_to_bring": [
+      "Admission Letter",
+      "Student ID Card",
+      "Notebook",
+      "College Prospectus"
+    ]
+  },
+  "timetable": {
+    "class_timings": "8:00 AM - 5:00 PM (Mon-Fri), 8:00 AM - 1:00 PM (Sat)",
+    "contact": "academic@campus.edu | Ext: 1300",
+    "info": "Timetable is published 1 week before the semester starts. Check the ERP portal for your personalized schedule based on enrolled courses.",
+    "info_note": "Access timetable via the ERP section on your Dashboard"
+  }
+}

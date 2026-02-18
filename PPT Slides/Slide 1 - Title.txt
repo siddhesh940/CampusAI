@@ -1,0 +1,10 @@
+SLIDE 1 — TITLE SLIDE
+=====================
+
+Title:       CampusAI – Smart Student Onboarding Agent
+Subtitle:    AI-Powered Intelligent Onboarding Platform for Universities
+Team:        INNOVGENIUS
+Event:       Hackathon 2026
+Date:        February 2026
+
+Background: Dark theme with futuristic/tech vibe (space/earth image you already have)

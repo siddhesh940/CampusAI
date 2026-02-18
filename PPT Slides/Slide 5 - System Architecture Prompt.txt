@@ -1,0 +1,111 @@
+SLIDE 5 — SYSTEM ARCHITECTURE (Gemini AI Image Prompt)
+========================================================
+
+Copy-paste this FULL prompt into Gemini AI image generator:
+
+---
+
+PROMPT FOR GEMINI AI:
+=====================
+
+Design a ultra-premium, visually stunning system architecture infographic 
+for a project called "CampusAI — Smart Student Onboarding Agent". 
+
+STYLE & AESTHETICS:
+- Background: Deep dark space theme with dark navy blue (#0a0a2e) to 
+  deep purple (#1a0533) gradient, scattered subtle stars and nebula glow
+- Cards: Frosted glass (glassmorphism) effect with soft glowing neon 
+  borders — purple (#7c3aed), blue (#3b82f6), cyan (#06b6d4), green (#10b981)
+- Arrows: Glowing animated-style cyan/purple gradient arrows connecting components
+- Icons: Colorful 3D-style emoji icons inside each card
+- Typography: Clean, bold white text with subtle text-shadow glow
+- Overall feel: Like a $10M funded SaaS startup pitch deck slide
+- Aspect ratio: 16:9 widescreen, ultra high resolution 4K quality
+
+LAYOUT (4 layers stacked vertically, full width):
+
+═══════════════════════════════════════════════════
+TOP — TITLE BAR:
+Big bold gradient text: "CampusAI — Smart Student Onboarding Agent"
+Small text below: "System Architecture Overview"
+Top-right corner: "INNOVGENIUS" team branding in white bold
+═══════════════════════════════════════════════════
+
+LAYER 1 — "User Journey Flow" (horizontal pipeline):
+6 glass cards connected by glowing arrows flowing left → right:
+
+  [📱 Student Access]  →  [🔐 Login / Register]  →  [📊 Smart Dashboard]
+  → [💬 AI Chat Assistant]  →  [🌐 Portal Actions]  →  [✅ Onboarding Done]
+
+  Each card has a small subtitle:
+  "Web Browser" → "SHA-256 Auth" → "KPIs & Progress" 
+  → "NLP Q&A Engine" → "Fees, Docs, LMS, Hostel" → "Campus Ready!"
+
+  This layer should have a subtle blue glow band behind it.
+
+═══════════════════════════════════════════════════
+
+LAYER 2 — "Frontend & Service Layer" (2 rows):
+
+  Row A — Frontend bar (full-width gradient banner):
+  "Streamlit + Python | Custom CSS Dark Theme | Session-based Routing"
+
+  Row B — "Backend Microservices" with 4 colorful glass cards side by side:
+
+  🧠 ONBOARDING ENGINE          📋 STAGE SERVICE
+  • Intent Detection (10 types)  • Student Data CRUD
+  • JSON Knowledge Base          • 4-Stage Progress Tracking  
+  • Smart Response Builder       • Auto Stage Advancement
+  • Portal Nav Buttons           • Onboarding Checklist
+
+  ⏰ REMINDER SERVICE            🔐 AUTH SERVICE
+  • Auto Deadline Reminders      • SHA-256 + Salt Hashing
+  • Category-wise Alerts         • Role-based Access Control
+  • Auto-resolve on Completion   • Admin Code Verification
+  • Due Date Tracking            • Secure Session Management
+
+  Each card should have a different accent color border:
+  Purple for Engine, Blue for Stage, Cyan for Reminder, Green for Auth
+
+═══════════════════════════════════════════════════
+
+LAYER 3 — "AI Engine" (floating glowing box on RIGHT side of Layer 2):
+A special highlighted glass card with purple glow border:
+
+  🤖 AI ENGINE
+  ✔ Rule-based NLP with Keyword Matching
+  ✔ 10 Intent Categories (fee, docs, lms, hostel, orientation, 
+     mentor, timetable, contacts, status, greeting)
+  ✔ Context-aware Personalized Responses
+  ✔ In-chat Portal Navigation Buttons
+  ✔ Persistent Chat History (Database-backed)
+  ✔ Escalation System for Complex Queries
+
+═══════════════════════════════════════════════════
+
+LAYER 4 — "Data & Infrastructure" (bottom row):
+5 glass cards in a horizontal row with database/cloud icons:
+
+  🗄️ SQLAlchemy ORM     🗃️ SQLite / PostgreSQL    📦 5 Data Models
+  "Database Abstraction"  "Dev & Production DB"      "User, Student, Chat,
+                                                      Reminder, Escalation"
+
+  ☁️ Cloud Deployment    📊 Plotly Analytics
+  "Streamlit Cloud /      "Interactive Charts
+   Heroku / Railway"       & Admin Reports"
+
+═══════════════════════════════════════════════════
+
+IMPORTANT DESIGN NOTES:
+- Make all text clearly readable against dark background
+- Use consistent glassmorphism cards throughout
+- Add subtle particle/star effects in background
+- Include thin glowing connection lines between layers
+- Make the AI Engine box slightly larger and more prominent
+- Add a subtle grid pattern overlay for tech feel
+- Use gradient color coding: Purple (AI) → Blue (Services) → 
+  Cyan (Data) → Green (Infrastructure)
+- NO watermarks, NO stock photo elements, pure vector/infographic style
+
+---
+

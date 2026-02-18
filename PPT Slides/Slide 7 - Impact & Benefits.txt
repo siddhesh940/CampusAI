@@ -1,0 +1,38 @@
+SLIDE 7 — IMPACT & BENEFITS
+=============================
+
+IMPACT:
+
+🚀 80% Faster Onboarding
+   Reduces weeks of manual process to just hours
+   with AI-guided step-by-step automation.
+
+📉 Zero Missed Deadlines
+   Smart reminders ensure every student completes
+   fees, documents & enrollment on time.
+
+🤖 24/7 Instant Support
+   AI Chat Assistant answers queries anytime —
+   no waiting in long helpdesk queues.
+
+📊 Real-time Admin Insights
+   Live analytics dashboard tracks onboarding
+   progress, bottlenecks & escalations instantly.
+
+
+BENEFITS:
+
+🎓 For Students:
+   • One-stop platform — fees, docs, LMS, hostel
+   • Personalized dashboard with progress tracking
+   • Instant AI answers instead of office visits
+
+🏫 For University:
+   • Reduced admin workload by 70%
+   • Data-driven decisions via analytics
+   • Scalable to 10,000+ students seamlessly
+
+💡 For IT Teams:
+   • Modular architecture — easy to extend
+   • SQLite → PostgreSQL swap in one config
+   • Cloud-ready deployment (Streamlit Cloud / Railway)

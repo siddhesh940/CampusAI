@@ -1,0 +1,3 @@
+"""
+CampusAI Backend – Application Package
+"""
