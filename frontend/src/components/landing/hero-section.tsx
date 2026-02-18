@@ -50,21 +50,7 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Dashboard Preview */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-16 relative"
-        >
-          <div className="glass-card p-2 max-w-5xl mx-auto">
-            <div className="bg-muted rounded-lg h-[400px] flex items-center justify-center">
-              <p className="text-muted-foreground">
-                Dashboard Preview – Phase 4
-              </p>
-            </div>
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );
