@@ -7,6 +7,7 @@ import {
     chatService,
     type ChatSessionResponse,
 } from "@/services/campus-services";
+import { demoChatSessions, withDemoFallback } from "@/services/demo-data";
 import {
     Bot,
     Clock,
@@ -38,8 +39,7 @@ export default function ChatPage() {
   };
 
   useEffect(() => {
-    chatService
-      .getHistory()
+    withDemoFallback(() => chatService.getHistory(), demoChatSessions)
       .then((res) => {
         setSessions(res.sessions || []);
         if (res.sessions?.length > 0) {

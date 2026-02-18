@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { documentService } from "@/services/campus-services";
+import { demoDocuments, withDemoFallback } from "@/services/demo-data";
 import type { Document } from "@/types";
 import {
     CheckCircle2,
@@ -84,7 +85,10 @@ export default function DocumentsPage() {
 
   const fetchDocs = async () => {
     try {
-      const res = await documentService.list();
+      const res = await withDemoFallback(
+        () => documentService.list(),
+        demoDocuments as any,
+      );
       setDocuments(res.documents || []);
     } catch (e: any) {
       setError(e.message);

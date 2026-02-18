@@ -9,6 +9,12 @@ import {
     type MentorProfile,
 } from "@/services/campus-services";
 import {
+    demoMentorMeetings,
+    demoMentorMessages,
+    demoMentorProfile,
+    withDemoFallback,
+} from "@/services/demo-data";
+import {
     Calendar,
     Loader2,
     Mail,
@@ -49,13 +55,22 @@ export default function MentorPage() {
   const loadMentor = async () => {
     setLoading(true);
     try {
-      const profile = await mentorService.getMyMentor();
+      const profile = await withDemoFallback(
+        () => mentorService.getMyMentor(),
+        demoMentorProfile,
+      );
       setMentor(profile);
       // Load messages
       if (profile.assignment_id) {
         const [msgRes, mtgRes] = await Promise.all([
-          mentorService.getMessages(profile.assignment_id),
-          mentorService.listMeetings(),
+          withDemoFallback(
+            () => mentorService.getMessages(profile.assignment_id),
+            demoMentorMessages,
+          ),
+          withDemoFallback(
+            () => mentorService.listMeetings(),
+            demoMentorMeetings,
+          ),
         ]);
         setMessages(msgRes.messages);
         setMeetings(mtgRes.meetings);

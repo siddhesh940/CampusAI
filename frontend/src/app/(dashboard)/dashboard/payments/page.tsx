@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { paymentService } from "@/services/campus-services";
+import { demoPayments, withDemoFallback } from "@/services/demo-data";
 import type { Payment } from "@/types";
 import {
     CheckCircle2,
@@ -81,7 +82,10 @@ export default function PaymentsPage() {
 
   const fetchPayments = async () => {
     try {
-      const res = await paymentService.list();
+      const res = await withDemoFallback(
+        () => paymentService.list(),
+        demoPayments as any,
+      );
       setPayments(res.payments || []);
     } catch (e: any) {
       setError(e.message);

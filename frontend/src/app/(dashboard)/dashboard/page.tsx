@@ -7,6 +7,7 @@ import {
     dashboardService,
     type DashboardSummary,
 } from "@/services/campus-services";
+import { demoDashboardSummary, withDemoFallback } from "@/services/demo-data";
 import {
     ArrowRight,
     BookOpen,
@@ -80,8 +81,7 @@ export default function DashboardPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    dashboardService
-      .getSummary()
+    withDemoFallback(() => dashboardService.getSummary(), demoDashboardSummary)
       .then(setSummary)
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));

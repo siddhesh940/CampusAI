@@ -9,6 +9,11 @@ import {
     type Subject,
 } from "@/services/campus-services";
 import {
+    demoCourses,
+    demoEnrollments,
+    withDemoFallback,
+} from "@/services/demo-data";
+import {
     CheckCircle2,
     GraduationCap,
     Loader2,
@@ -35,8 +40,8 @@ export default function CoursesPage() {
     setLoading(true);
     try {
       const [courseRes, enrollRes] = await Promise.all([
-        courseService.listCourses(),
-        courseService.getEnrollments(),
+        withDemoFallback(() => courseService.listCourses(), demoCourses),
+        withDemoFallback(() => courseService.getEnrollments(), demoEnrollments),
       ]);
       setCourses(courseRes.courses);
       setEnrollments(enrollRes.enrollments);

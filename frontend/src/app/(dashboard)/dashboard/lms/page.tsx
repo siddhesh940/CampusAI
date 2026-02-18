@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { lmsService, type LMSStatus } from "@/services/campus-services";
+import { demoLMSStatus, withDemoFallback } from "@/services/demo-data";
 import {
     BookOpen,
     Calendar,
@@ -24,8 +25,7 @@ export default function LMSPage() {
   const [copied, setCopied] = useState("");
 
   useEffect(() => {
-    lmsService
-      .getStatus()
+    withDemoFallback(() => lmsService.getStatus(), demoLMSStatus)
       .then(setStatus)
       .catch((e) => {
         if (!e.message?.includes("404")) {

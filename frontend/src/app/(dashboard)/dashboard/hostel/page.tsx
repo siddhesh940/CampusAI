@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { hostelService } from "@/services/campus-services";
+import { demoHostelStatus, withDemoFallback } from "@/services/demo-data";
 import type { HostelApplication } from "@/types";
 import {
     BedDouble,
@@ -91,9 +92,11 @@ export default function HostelPage() {
   const [specialReq, setSpecialReq] = useState("");
 
   useEffect(() => {
-    hostelService
-      .getStatus()
-      .then(setApplication)
+    withDemoFallback(() => hostelService.getStatus(), demoHostelStatus as any)
+      .then((res) => {
+        if (res.status === "not_applied") setNotApplied(true);
+        else setApplication(res);
+      })
       .catch((e) => {
         if (
           e.message?.includes("404") ||

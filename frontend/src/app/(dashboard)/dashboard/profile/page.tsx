@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { authService } from "@/services/auth-service";
 import { userService } from "@/services/campus-services";
+import { demoUser, withDemoFallback } from "@/services/demo-data";
 import type { User as UserType } from "@/types";
 import {
     Calendar,
@@ -31,8 +32,7 @@ export default function ProfilePage() {
   const [phone, setPhone] = useState("");
 
   useEffect(() => {
-    authService
-      .getMe()
+    withDemoFallback(() => authService.getMe(), demoUser as any)
       .then((u) => {
         setUser(u);
         setFirstName(u.first_name || "");

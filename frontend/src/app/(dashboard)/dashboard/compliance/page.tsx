@@ -6,6 +6,7 @@ import {
     complianceService,
     type ComplianceStatus,
 } from "@/services/campus-services";
+import { demoComplianceStatus, withDemoFallback } from "@/services/demo-data";
 import {
     CheckCircle2,
     Circle,
@@ -36,7 +37,10 @@ export default function CompliancePage() {
 
   const loadCompliance = async () => {
     try {
-      const res = await complianceService.getStatus();
+      const res = await withDemoFallback(
+        () => complianceService.getStatus(),
+        demoComplianceStatus as any,
+      );
       setItems(res.items);
       setStats({
         total: res.total,

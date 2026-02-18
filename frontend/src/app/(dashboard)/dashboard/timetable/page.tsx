@@ -3,16 +3,17 @@
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
-  timetableService,
-  type WeeklyTimetableResponse,
+    timetableService,
+    type WeeklyTimetableResponse,
 } from "@/services/campus-services";
+import { demoWeeklyTimetable, withDemoFallback } from "@/services/demo-data";
 import {
-  Calendar,
-  Clock,
-  Download,
-  MapPin,
-  User,
-  BookOpen,
+    BookOpen,
+    Calendar,
+    Clock,
+    Download,
+    MapPin,
+    User,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -26,13 +27,14 @@ const DAY_LABELS: Record<string, string> = {
 };
 
 export default function TimetablePage() {
-  const [timetable, setTimetable] = useState<WeeklyTimetableResponse | null>(null);
+  const [timetable, setTimetable] = useState<WeeklyTimetableResponse | null>(
+    null,
+  );
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   useEffect(() => {
-    timetableService
-      .getWeekly()
+    withDemoFallback(() => timetableService.getWeekly(), demoWeeklyTimetable)
       .then(setTimetable)
       .catch((e: any) => setError(e.message))
       .finally(() => setLoading(false));
@@ -122,7 +124,11 @@ export default function TimetablePage() {
           </p>
         </div>
         {timetable && timetable.total_subjects > 0 && (
-          <Button onClick={handleDownloadPDF} variant="outline" className="gap-2">
+          <Button
+            onClick={handleDownloadPDF}
+            variant="outline"
+            className="gap-2"
+          >
             <Download className="h-4 w-4" />
             Download PDF
           </Button>
@@ -185,7 +191,8 @@ export default function TimetablePage() {
                       <div className="flex items-center gap-2 w-36 flex-shrink-0">
                         <Clock className="h-3.5 w-3.5 text-muted-foreground" />
                         <span className="text-sm font-medium">
-                          {entry.start_time?.slice(0, 5)} - {entry.end_time?.slice(0, 5)}
+                          {entry.start_time?.slice(0, 5)} -{" "}
+                          {entry.end_time?.slice(0, 5)}
                         </span>
                       </div>
                       <div className="flex-1 min-w-0">
